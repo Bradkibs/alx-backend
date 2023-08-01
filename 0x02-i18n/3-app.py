@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 """FLASK APP WITH I18N"""
 
-
 from flask import Flask, render_template, request
-from flask_babel import Babel, _
+from flask_babel import Babel
 
 
 app = Flask(__name__)
