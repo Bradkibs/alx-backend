@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""CONFIG FILE FOR FLASK BABEL"""
+"""FLASK APP WITH I18N"""
 
 
 from flask import Flask, render_template
@@ -11,6 +11,7 @@ babel = Babel(app)
 
 
 class Config:
+    """CONFIG FILE FOR FLASK BABEL"""
     LANGUAGES = ["en", "fr"]
     BABEL_DEFAULT_LOCALE = "en"
     BABEL_DEFAULT_TIMEZONE = "UTC"
