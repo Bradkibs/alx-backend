@@ -37,6 +37,7 @@ def get_user():
 
 @app.before_request
 def before_request():
+    """Function to store an instance of a user in g.user"""
     l_user = get_user()
     if l_user:
         g.user = l_user
